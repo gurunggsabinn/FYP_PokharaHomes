@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/topframe1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/profile_header"
+                    android:padding="10dp">
+
+                </include>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/topframe2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/topframe1"
+                android:background="@color/ColorBackground3">
+
+                <TextView
+                    android:id="@+id/tvFullname"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:padding="10dp"
+                    android:text="Edit Profile"
+                    android:textColor="@color/ColorBackground"
+                    android:textSize="21sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+                <ImageView
+                    android:id="@+id/ivUserEditprofile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:onClick="showEditProfile"
+                    android:src="@drawable/ic_baseline_edit_24">
+
+                </ImageView>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/llayoutuserprofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topframe2"
+                android:background="@color/ColorBackground"
+                android:orientation="vertical"
+                android:paddingLeft="15dp">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="2"
+                    android:columnOrderPreserved="false"
+                    android:rowCount="5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/nunito_regular"
+                        android:text="Gender :"
+                        android:textColor="@color/ColorPrimary"
+                        android:textSize="15dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/tvUserprofile_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/nunito_regular"
+                        android:text="Male"
+                        android:textColor="@color/ColorSecondary"
+                        android:textSize="15dp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/nunito_regular"
+                        android:text="DOB :"
+                        android:textColor="@color/ColorPrimary"
+                        android:textSize="15dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/tvUserprofile_dob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/nunito_regular"
+                        android:text="2000/20/01"
+                        android:textColor="@color/ColorSecondary"
+                        android:textSize="15dp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/nunito_regular"
+                        android:text="Address :"
+                        android:textColor="@color/ColorPrimary"
+                        android:textSize="15dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/tvUserprofile_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/nunito_regular"
+                        android:text="Birauta"
+                        android:textColor="@color/ColorSecondary"
+                        android:textSize="15dp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/nunito_regular"
+                        android:text="Phone :"
+                        android:textColor="@color/ColorPrimary"
+                        android:textSize="15dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/tvUserprofile_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/nunito_regular"
+                        android:text="9805886208"
+                        android:textColor="@color/ColorSecondary"
+                        android:textSize="15dp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/nunito_regular"
+                        android:text="Email :"
+                        android:textColor="@color/ColorPrimary"
+                        android:textSize="15dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/tvUserprofile_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/nunito_regular"
+                        android:text="galaxysabin@gmail.com"
+                        android:textColor="@color/ColorSecondary"
+                        android:textSize="15dp"></TextView>
+                </GridLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/llayoutUserMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llayoutuserprofile"
+                android:layout_marginTop="30dp"
+                android:background="@color/ColorBackground"
+                android:orientation="vertical"
+                android:paddingLeft="15dp">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="1"
+                    android:columnOrderPreserved="false">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/border_text_view"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="Menu"
+                        android:textColor="@color/ColorPrimary"
+                        android:textSize="21sp"/>
+
+                    <TextView
+                        android:id="@+id/tvOrderHistory"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/border_text_view"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:onClick="gotoOrderHistory"
+                        android:text="My Orders"
+                        android:textColor="@color/ColorPrimary"
+                        android:textSize="15dp"/>
+
+
+                    <TextView
+                        android:id="@+id/tvBookingHistory"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/border_text_view"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:onClick="gotoBookingHistory"
+                        android:text="My Bookings"
+                        android:textColor="@color/ColorPrimary"
+                        android:textSize="15dp"/>
+                    <TextView
+                        android:id="@+id/tvNotitications"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/border_text_view"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:onClick="gotoNotifications"
+                        android:text="Notifications"
+                        android:textColor="@color/ColorPrimary"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:id="@+id/tvLogout"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/border_text_view"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="Logout"
+                        android:textColor="@color/ColorPrimary"
+                        android:textSize="15dp"/>
+                </GridLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+
+

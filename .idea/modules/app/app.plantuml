@@ -1,0 +1,297 @@
+@startuml
+
+title __POKHARAHOMES.APP's Class Diagram__\n
+
+  namespace com.example.pokharahomes {
+    class com.example.pokharahomes.BookingHistoryActivity {
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    class com.example.pokharahomes.BuildConfig {
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    class com.example.pokharahomes.EditProfileActivity {
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    class com.example.pokharahomes.LoginActivity {
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    class com.example.pokharahomes.MainActivity {
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    class com.example.pokharahomes.NotificationActivity {
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    class com.example.pokharahomes.OrderHistoryActivity {
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    class com.example.pokharahomes.PaymentActivity {
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    class com.example.pokharahomes.SignUpActivity {
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    class com.example.pokharahomes.SplashScreen {
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    namespace adapters {
+      class com.example.pokharahomes.adapters.BookingHistoryAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    namespace adapters {
+      class com.example.pokharahomes.adapters.FoodAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    namespace adapters {
+      class com.example.pokharahomes.adapters.FoodNotificationAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    namespace adapters {
+      class com.example.pokharahomes.adapters.OrderHistoryAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    namespace adapters {
+      class com.example.pokharahomes.adapters.RoomAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    namespace adapters {
+      class com.example.pokharahomes.adapters.RoomNotificationAdapter {
+      }
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    namespace bookings {
+      class com.example.pokharahomes.bookings.FoodOrderActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    namespace bookings {
+      class com.example.pokharahomes.bookings.RoomBookingActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    namespace fragments {
+      class com.example.pokharahomes.fragments.FoodFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    namespace fragments {
+      class com.example.pokharahomes.fragments.ProfileFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    namespace fragments {
+      class com.example.pokharahomes.fragments.RoomFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    namespace models {
+      class com.example.pokharahomes.models.BookingHistory {
+      }
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    namespace models {
+      class com.example.pokharahomes.models.Food {
+      }
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    namespace models {
+      class com.example.pokharahomes.models.FoodNotification {
+      }
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    namespace models {
+      class com.example.pokharahomes.models.OrderHistory {
+      }
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    namespace models {
+      class com.example.pokharahomes.models.Room {
+      }
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    namespace models {
+      class com.example.pokharahomes.models.RoomNotification {
+      }
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    namespace models {
+      class com.example.pokharahomes.models.RoomNumber {
+      }
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    namespace models {
+      class com.example.pokharahomes.models.User {
+      }
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    namespace utils {
+      class com.example.pokharahomes.utils.ErrorUtils {
+      }
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    namespace utils {
+      class com.example.pokharahomes.utils.ItemClickSupport {
+      }
+    }
+  }
+  
+
+  namespace com.example.pokharahomes {
+    namespace utils {
+      class com.example.pokharahomes.utils.SharedPrefManager {
+      }
+    }
+  }
+  
+
+  com.example.pokharahomes.BookingHistoryActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.pokharahomes.BookingHistoryActivity o-- com.example.pokharahomes.adapters.BookingHistoryAdapter : bookingHistoryAdapter
+  com.example.pokharahomes.BookingHistoryActivity o-- com.example.pokharahomes.models.User : user
+  com.example.pokharahomes.EditProfileActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.pokharahomes.EditProfileActivity o-- com.example.pokharahomes.models.User : user
+  com.example.pokharahomes.LoginActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.pokharahomes.MainActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.pokharahomes.NotificationActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.pokharahomes.NotificationActivity o-- com.example.pokharahomes.adapters.FoodNotificationAdapter : foodNotificationAdapter
+  com.example.pokharahomes.NotificationActivity o-- com.example.pokharahomes.adapters.RoomNotificationAdapter : roomNotificationAdapter
+  com.example.pokharahomes.NotificationActivity o-- com.example.pokharahomes.models.User : user
+  com.example.pokharahomes.OrderHistoryActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.pokharahomes.OrderHistoryActivity o-- com.example.pokharahomes.adapters.OrderHistoryAdapter : orderHistoryAdapter
+  com.example.pokharahomes.OrderHistoryActivity o-- com.example.pokharahomes.models.User : user
+  com.example.pokharahomes.PaymentActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.pokharahomes.PaymentActivity o-- com.example.pokharahomes.models.Room : room
+  com.example.pokharahomes.PaymentActivity o-- com.example.pokharahomes.models.User : user
+  com.example.pokharahomes.SignUpActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.pokharahomes.SplashScreen -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.pokharahomes.adapters.BookingHistoryAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.pokharahomes.adapters.FoodAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.pokharahomes.adapters.FoodNotificationAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.pokharahomes.adapters.OrderHistoryAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.pokharahomes.adapters.RoomAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.pokharahomes.adapters.RoomNotificationAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.pokharahomes.bookings.FoodOrderActivity .up.|> android.widget.AdapterView.OnItemSelectedListener
+  com.example.pokharahomes.bookings.FoodOrderActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.pokharahomes.bookings.FoodOrderActivity o-- com.example.pokharahomes.models.Food : food
+  com.example.pokharahomes.bookings.FoodOrderActivity o-- com.example.pokharahomes.models.User : user
+  com.example.pokharahomes.bookings.RoomBookingActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.pokharahomes.bookings.RoomBookingActivity o-- com.example.pokharahomes.models.Room : room
+  com.example.pokharahomes.bookings.RoomBookingActivity o-- com.example.pokharahomes.models.User : user
+  com.example.pokharahomes.fragments.FoodFragment -up-|> androidx.fragment.app.Fragment
+  com.example.pokharahomes.fragments.FoodFragment o-- com.example.pokharahomes.adapters.FoodAdapter : foodAdapter
+  com.example.pokharahomes.fragments.ProfileFragment -up-|> androidx.fragment.app.Fragment
+  com.example.pokharahomes.fragments.ProfileFragment o-- com.example.pokharahomes.models.User : user
+  com.example.pokharahomes.fragments.RoomFragment -up-|> androidx.fragment.app.Fragment
+  com.example.pokharahomes.fragments.RoomFragment o-- com.example.pokharahomes.adapters.RoomAdapter : roomAdapter
+  com.example.pokharahomes.models.BookingHistory .up.|> java.io.Serializable
+  com.example.pokharahomes.models.Food .up.|> java.io.Serializable
+  com.example.pokharahomes.models.FoodNotification .up.|> java.io.Serializable
+  com.example.pokharahomes.models.OrderHistory .up.|> java.io.Serializable
+  com.example.pokharahomes.models.Room .up.|> java.io.Serializable
+  com.example.pokharahomes.models.RoomNotification .up.|> java.io.Serializable
+  com.example.pokharahomes.models.RoomNumber .up.|> java.io.Serializable
+  com.example.pokharahomes.utils.ItemClickSupport o-- com.example.pokharahomes.utils.ItemClickSupport.OnItemClickListener : mOnItemClickListener
+  com.example.pokharahomes.utils.ItemClickSupport o-- com.example.pokharahomes.utils.ItemClickSupport.OnItemLongClickListener : mOnItemLongClickListener
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

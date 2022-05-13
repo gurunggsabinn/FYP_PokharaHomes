@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_for_order_booking_history"
+        android:columnCount="2"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5sp"
+                android:text="Ordered DateTime :"
+                android:textAlignment="gravity"
+                android:textColor="@color/ColorPrimary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5sp"
+                android:text="Food Name :"
+                android:textAlignment="gravity"
+                android:textColor="@color/ColorPrimary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5sp"
+                android:text="Quantity :"
+                android:textAlignment="gravity"
+                android:textColor="@color/ColorPrimary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5sp"
+                android:text="Room No : :"
+                android:textAlignment="gravity"
+                android:textColor="@color/ColorPrimary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5sp"
+                android:text="Total Amount(NPR) :"
+                android:textAlignment="gravity"
+                android:textColor="@color/ColorPrimary"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvOrderedDatetime_orderHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5sp"
+                android:text=""
+                android:textAlignment="gravity"
+                android:textColor="@color/ColorSecondary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvFoodName_orderHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5sp"
+                android:text=""
+                android:textAlignment="gravity"
+                android:textColor="@color/ColorSecondary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvQuantity_orderHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5sp"
+                android:text=""
+                android:textAlignment="gravity"
+                android:textColor="@color/ColorSecondary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvRoomNo_orderHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5sp"
+                android:text=""
+                android:textAlignment="gravity"
+                android:textColor="@color/ColorSecondary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvTotalAmount_orderHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="left"
+                android:fontFamily="@font/nunito_regular"
+                android:gravity="left"
+                android:padding="5sp"
+                android:text=""
+                android:textAlignment="gravity"
+                android:textColor="@color/ColorSecondary"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+    </GridLayout>
+
+</LinearLayout>

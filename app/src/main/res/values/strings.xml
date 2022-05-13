@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">PokharaHomes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--    array for roomnumbers dropdown spinner in bookingroom java class-->
+    <string-array name="roomNumbers">
+        <item>101</item>
+        <item>102</item>
+        <item>103</item>
+        <item>104</item>
+        <item>105</item>
+        <item>106</item>
+        <item>201</item>
+        <item>202</item>
+        <item>203</item>
+        <item>204</item>
+        <item>205</item>
+    </string-array>
+
+    <item name="item_click_support" type="id" />
+</resources>

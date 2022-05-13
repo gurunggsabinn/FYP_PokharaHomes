@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@color/ColorBackground"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/ivLogin"
+                android:layout_width="230dp"
+                android:layout_height="165dp"
+                android:contentDescription="hotelLogo"
+                android:src="@drawable/logo_login">
+
+            </ImageView>
+
+        </LinearLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:id="@+id/etLoginUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:background="@color/ColorBackground"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/etLoginPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Password"
+                android:background="@color/ColorBackground"
+                android:inputType="textPassword"
+                android:textSize="18sp"></EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_rounded"
+            android:fontFamily="@font/nunito_bold"
+            android:gravity="center"
+            android:shadowColor="@color/ColorBackground2"
+            android:shadowDx="0"
+            android:shadowDy="4"
+            android:shadowRadius="30"
+            android:text="Login"
+            android:textColor="@color/ColorBackground"
+            android:textSize="20sp"
+            android:textStyle="bold"></Button>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="0dp"
+            android:columnCount="2">
+
+            <TextView
+                android:id="@+id/tvForgetPw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/nunito_light"
+                android:gravity="right"
+                android:padding="2.5dp"
+                android:text="Create a New User?"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvSignup"
+                android:layout_width="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/nunito_extrabold"
+                android:gravity="left"
+                android:onClick="gotoSignup"
+                android:padding="2.5dp"
+                android:text="Sign up"
+                android:textColor="@color/ColorPrimary" />
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+

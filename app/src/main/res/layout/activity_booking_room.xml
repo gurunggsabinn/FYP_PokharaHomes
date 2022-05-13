@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBackground2"
+    android:orientation="vertical"
+    tools:context=".bookings.RoomBookingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/ColorBackground"
+            android:orientation="vertical">
+
+
+            <com.afdhal_fa.imageslider.ImageSlider
+                android:id="@+id/imageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:iss_auto_cycle="true"
+                app:iss_delay="0"
+                app:iss_period="1000"
+                app:iss_image_scaleType="centerCrop"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_below="@+id/ll1"
+            android:layout_marginTop="6dp"
+            android:background="@color/ColorBackground"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/tvroomsname_booking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Standard Room"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="fill"
+                android:gravity="right|bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvrooms_offer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/ColorPrimary"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:gravity="center"
+                    android:padding="4sp"
+                    android:text="Breakfast, Lunch &amp; Dinner included"
+                    android:textColor="@color/ColorBackground"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll2"
+            android:layout_marginTop="6dp"
+            android:background="@color/ColorBackground"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/tvrooms_priceforonenight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="Price for 1 night"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="NPR"
+                    android:textColor="@color/ColorSecondary"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tvrooms_price_booking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textColor="@color/ColorSecondary"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="Max Person Allowed"
+                    android:textColor="@color/ColorSecondary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvrooms_maxpersonallowed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textColor="@color/ColorSecondary"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="fill"
+                android:gravity="right|bottom"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/ColorSecondary"
+                        android:fontFamily="@font/nunito_extrabold"
+                        android:gravity="center"
+                        android:padding="4sp"
+                        android:text="Check-out Time :"
+                        android:textColor="@color/ColorBackground"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tvCheckOutTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/ColorSecondary"
+                        android:fontFamily="@font/nunito_extrabold"
+                        android:gravity="center"
+                        android:padding="4sp"
+                        android:text="12 PM"
+                        android:textColor="@color/ColorBackground"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll3"
+            android:layout_marginTop="6dp"
+            android:background="@color/ColorBackground"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvrooms_details_booking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_semibold"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll4"
+            android:layout_marginTop="6dp"
+            android:background="@color/ColorBackground"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <GridLayout
+                android:id="@+id/gL_checkinOuttime"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:columnCount="4"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvCheckin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:gravity="left"
+                    android:padding="2.5sp"
+                    android:text="Check In: "
+                    android:textColor="@color/ColorPrimary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/etCheckin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:gravity="left"
+                    android:hint="DD-MM-YY"
+                    android:padding="2.5dp"
+                    android:textColor="@color/ColorPrimary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:gravity="left"
+                    android:padding="2.5sp"
+                    android:text="Check Out: "
+                    android:textColor="@color/ColorSecondary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/etCheckOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:gravity="left"
+                    android:hint="DD-MM-YY"
+                    android:padding="2.5sp"
+                    android:textColor="@color/ColorSecondary"
+                    android:textSize="14sp" />
+
+            </GridLayout>
+
+            <GridLayout
+                android:id="@+id/gL_roomnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tvroomnumber_booking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:gravity="left"
+                    android:padding="2.5sp"
+                    android:text="Room Number: "
+                    android:textColor="@color/ColorPrimary"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:id="@+id/roomsNumberDropdownSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/ColorPrimary"
+                    style="@style/Widget.AppCompat.DropDownItem.Spinner"
+                    android:spinnerMode="dropdown"
+                    android:outlineAmbientShadowColor="@color/ColorPrimary" />
+            </GridLayout>
+
+            <GridLayout
+                android:id="@+id/gL_totalroomprice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:gravity="left"
+                    android:padding="2.5sp"
+                    android:text="Total Price(NPR): "
+                    android:textColor="@color/ColorPrimary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvtotalroomprice_booking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:gravity="right"
+                    android:padding="2.5sp"
+                    android:textColor="@color/ColorSecondary"
+                    android:textSize="14sp" />
+            </GridLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll6"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/ll5"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnBookingRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_rounded"
+                android:fontFamily="@font/nunito_bold"
+                android:gravity="center"
+                android:shadowColor="@color/ColorBackground2"
+                android:shadowDx="0"
+                android:shadowDy="4"
+                android:shadowRadius="30"
+                android:text="Book Now"
+                android:textColor="@color/ColorBackground"
+                android:textSize="20sp"
+                android:textStyle="bold"></Button>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
